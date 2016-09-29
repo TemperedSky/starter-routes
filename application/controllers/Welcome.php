@@ -29,5 +29,12 @@ class Welcome extends Application
 
 		$this->render();
 	}
+    
+    public function shucks(){
+        $this->data['pagebody'] = 'justone';
+        
+        $this->data += $this->quotes->get(2);
+		$this->render();
+    }
 
 }
