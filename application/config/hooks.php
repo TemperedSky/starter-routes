@@ -1,6 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------------
 | Hooks
@@ -8,6 +6,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | This file lets you define "hooks" to extend CI without hacking the core
 | files.  Please see the user guide for info:
 |
-|	https://codeigniter.com/user_guide/general/hooks.html
+|   http://codeigniter.com/user_guide/general/hooks.html
 |
 */
+/*
+ * Defining a hook to bold capitalized words on quote pages.
+ */
+$hook['display_override'] = array(
+    'class' => '',
+    'function' => 'starFourLetterWords',
+    'filename' => 'hooks.php',
+    'filepath' => 'hooks'
+);
