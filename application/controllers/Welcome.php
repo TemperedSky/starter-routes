@@ -36,5 +36,4 @@ class Welcome extends Application
         $this->data += $this->quotes->get(2);
 		$this->render();
     }
-
 }
