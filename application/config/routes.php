@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['sleep'] = 'Sleep/zzz';
+$route['sleep'] = 'First/zzz';
 $route['lock/(:any)/(:any)'] = 'Welcome/shucks';
 $route['show/(:num)'] = 'First/gimme/3';
 $route['([a-z]+)([a-z]+)([a-z]+)([a-z]+)/bingo'] = 'Bingo';
@@ -63,3 +63,4 @@ $route['dunno'] = function() {
     readfile($source);
     die();
 };
+$route['comp([0-9]+)\/wisdom'] = 'Wise/bingo';
