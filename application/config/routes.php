@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['sleep'] = 'Sleep/zzz';
 $route['lock/(:any)/(:any)'] = 'Welcome/shucks';
+$route['show/(:num)'] = 'First/gimme/3';
 $route['dunno'] = function() {
     $source = './data/surprise.jpg';
     header('Content-type: image/jpeg');
