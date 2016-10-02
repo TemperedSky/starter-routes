@@ -2,16 +2,16 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sleep extends Application{
+class Wise extends Application{
     
     function __construct(){
         parent::__construct();
     }
     
-    public function zzz(){
+    public function bingo(){
         $this->data['pagebody'] = 'justone';
         
-        $this->data += $this->quotes->get(1);
+        $this->data += $this->quotes->get(6);
 		$this->render();
     }
 }
