@@ -15,7 +15,13 @@ class First extends Application{
 		$this->render();
     }
     
+    public function zzz(){
+        $this->data['pagebody'] = 'justone';
         
+        $this->data += $this->quotes->get(1);
+        $this->render();
+    } 
+
     public function gimme($id){
         $this->data['pagebody'] = 'justone';
         
